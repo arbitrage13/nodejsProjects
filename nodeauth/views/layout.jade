@@ -1,13 +1,11 @@
 doctype html
 html
-  head
-    title #{title}:Express Website
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    link(href='stylesheets/bootstrap.css', rel='stylesheet')
-    link(href='/stylesheets/style.css', rel='stylesheet')
-  body
-    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
+    head
+        title
+        link(rel='stylesheet', href ='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    body
+     nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
       a.navbar-brand(href='#') EXpress Website
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
@@ -22,11 +20,12 @@ html
           li.nav-item
             a.nav-link(href='./contact') Contact
           li.nav-item.dropdown
-            a#dropdown01.nav-link.dropdown-toggle(href='http://example.com', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Dropdown
-            .dropdown-menu(aria-labelledby='dropdown01')
-              a.dropdown-item(href='/') Members
+            a#dropdown01.nav-link.dropdown-toggle(href='http://example.com', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Membership
+            .dropdown-menu(aria-labelledby='Dropdown1')
+              a.dropdown-item(href='/') Member
               a.dropdown-item(href='/users/register') Register
-              a.dropdown-item(href='/users/login') Login
+              a.dropdown-item(href='/users/login') Log In
+              a.dropdown-item(href='/users/logout') Log Out
         //form.form-inline.my-2.my-lg-0
           input.form-control.mr-sm-2(type='text', placeholder='Search', aria-label='Search')
           button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
